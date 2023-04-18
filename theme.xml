@@ -1,0 +1,322 @@
+<!--
+theme name:     ToggleBoxy Theme Collection 200 in total
+creator:	Dwayne Hurst (aka Hursty)
+version         1.0
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+<!--
+Carousel wheel and main menu background
+-->
+
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <zIndex>4</zIndex>	      
+        <type>horizontal</type>
+        <pos>0 0.335</pos>
+        <size>1 1</size>
+        <logoScale>1.05</logoScale>
+        <logoSize>0.28 0.28</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>11</maxLogoCount>
+		<logoAlignment>center</logoAlignment> 
+         <zIndex>50</zIndex>			
+      </carousel>
+
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/bg.png</path>
+         <zIndex>2</zIndex>          
+      </image>  
+                 
+      <text name="systemInfo">     
+         <pos>0 -0.005</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+	     <fontSize>0.025</fontSize>
+         <zIndex>7</zIndex>	     
+      </text>            
+   </view>
+</feature>
+
+
+<!--
+On Screen help
+-->
+
+   <view name="system">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+         <fontSize>0.04</fontSize>     
+         <pos>1.15 0.939</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="detailed,video, basic">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+         <fontSize>0.04</fontSize>     
+         <pos>1.05 0.939</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view> 
+    
+   
+<!--
+System Gamelist
+--> 
+
+   <view name="detailed,video">
+      <textlist name="gamelist">
+         <zIndex>43</zIndex>	      
+	     <selectorColor>a200ff</selectorColor>
+	     <selectorImagePath>./_inc/images/icon.png</selectorImagePath>
+	     <selectedColor>a200ff</selectedColor>
+	     <selectorHeight>.05</selectorHeight>        
+         <pos>0.01 0.02</pos>
+         <size>0.39 0.67</size> 
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+         <fontSize>0.035</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+	     <horizontalMargin>0.021</horizontalMargin>   
+      </textlist>
+   </view> 
+ 
+   <view name="basic">
+      <textlist name="gamelist">
+         <zIndex>43</zIndex>	      
+	     <selectorColor>a200ff</selectorColor>
+	     <selectorImagePath>./_inc/images/icon.png</selectorImagePath>
+	     <selectedColor>a200ff</selectedColor>
+	     <selectorHeight>.05</selectorHeight>        
+         <pos>0.01 0.032</pos>
+         <size>0.39 0.96</size> 
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+         <fontSize>0.035</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+	     <horizontalMargin>0.021</horizontalMargin>   
+      </textlist>
+   </view> 
+ 
+  
+<!--
+System View Backgrounds
+-->  
+    
+   
+   <view name="basic">
+      <image name="background3" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/basic.png</path>
+         <zIndex>2</zIndex>          
+      </image>
+
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.89 0.65</pos>
+         <maxSize>0.1 1</maxSize>
+      </image>                      
+   </view> 
+    
+  
+    
+<!--
+Metadata, description, rating etc
+-->      
+    
+
+   <view name="video,detailed">   
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/TechnoRaceItalic-eZRWe.otf</fontPath>
+         <fontSize>0.03</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+         <pos>0.5 0.892</pos>
+         <size>0.2 0.1</size>
+         <fontSize>0.055</fontSize>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                 
+      </text>
+      <rating name="md_rating">
+         <zIndex>5</zIndex>       
+         <pos>0.63 0.92</pos>
+         <size>0.2 0.055</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+      <text name="md_lbl_players">
+         <pos>0.03 0.73</pos>
+         <size>0.1 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <text name="md_players">
+         <pos>0.11 0.73</pos>
+         <size>0.0375 0.035</size>
+         <zIndex>43</zIndex>
+         <color>a200ff</color>                  
+      </text>
+      <text name="md_lbl_releasedate">
+         <pos>0.2 0.73</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.3 0.73</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>
+         <color>a200ff</color>                  
+      </datetime>
+      <text name="md_lbl_genre">
+         <pos>0.03 0.77</pos>
+         <size>0.12 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_genre">
+         <pos>0.11 0.77</pos>
+         <size>0.27 0.035</size>
+         <color>a200ff</color>         
+         <zIndex>5</zIndex>         
+      </text>         
+      <text name="md_lbl_playcount">
+         <pos>0.03 0.81</pos>
+         <size>0.1 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_playcount">
+         <pos>0.13 0.81</pos>
+         <size>0.0375 0.035</size>
+         <color>a200ff</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_publisher">
+         <pos>0.03 0.89</pos>
+         <size>0.1 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_publisher">
+         <pos>0.11 0.89</pos>
+         <size>0.27 0.035</size>
+         <color>a200ff</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_developer">
+         <pos>0.03 0.93</pos>
+         <size>0.1 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_developer">
+         <pos>0.11 0.93</pos>
+         <size>0.27 0.035</size>
+         <color>a200ff</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_lastplayed">
+         <pos>0.03 0.85</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <datetime name="md_lastplayed">
+         <pos>0.12 0.85</pos>
+         <size>0.13 0.035</size>
+         <zIndex>43</zIndex>
+         <color>a200ff</color>                  
+      </datetime>                            
+      <text name="md_description">
+         <pos>0.43 0.725</pos>
+         <size>0.45 0.155</size>
+         <color>ffffff</color>
+         <alignment>left</alignment> 
+         <fontSize>0.025</fontSize>
+	   <lineSpacing>1</lineSpacing>  
+         <zIndex>5</zIndex>         
+      </text>
+   </view>
+
+  
+
+<!--
+Images, boxart, snaps, wheel art etc
+--> 
+
+
+   <view name="detailed">
+      <image name="background4" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/video.png</path>
+         <zIndex>2</zIndex>          
+      </image>   
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.905 0.724</pos>
+         <maxSize>0.08 1</maxSize>
+      </image>    
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.7 0.35</pos>
+         <maxSize>0.5 0.5</maxSize>
+         <zIndex>6</zIndex>     
+      </image>           
+   </view>
+
+   <view name="video">
+      <image name="background4" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/video.png</path>
+         <zIndex>2</zIndex>          
+      </image> 
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.905 0.724</pos>
+         <maxSize>0.08 1</maxSize>
+      </image>   
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.7 0.35</pos>
+         <maxSize>0.5 0.5</maxSize>
+         <delay>0.75</delay>        
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+         <zIndex>6</zIndex>               
+      </video>          
+      <image name="md_marquee">
+         <pos>0.7 0.1</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.1 0.1</maxSize>
+         <zIndex>7</zIndex>         
+      </image>             
+   </view>
+   
+</theme>
